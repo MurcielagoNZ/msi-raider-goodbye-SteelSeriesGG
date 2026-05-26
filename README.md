@@ -42,8 +42,8 @@
 * `Byte 3`: 按键总量 (`0x66`，即十进制 102 颗键) / Total Keys (`0x66`, i.e. 102 keys in decimal)
 * `Byte 4`: 固定 `0x00` / Fixed `0x00`
 * `Byte 5 ~ 412`: 102 组 4 字节的 RGB 数据阵列，线性排列结构为：`[KeyID] [R] [G] [B]` / 102 groups of 4-byte RGB data arrays, linearly arranged as: `[KeyID] [R] [G] [B]`
- * `Fn`的`key ID`是`0xf0`，其余按键都遵循国际标准的 **USB HID Keyboard Usage ID** 规范，直接查阅标准的 USB 扫描码表即可对号入座。`电源`键是`0x66`（也在规范中）。
- * The `KeyID` for the `Fn` key is `0xF0`, while all other keys strictly adhere to the international standard **USB HID Keyboard Usage ID specification**. They can be mapped directly by referencing a standard USB scan code table. The `Power` key is `0x66` (which is also defined within the specification).
+  * `Fn`的`key ID`是`0xf0`，其余按键都遵循国际标准的 **USB HID Keyboard Usage ID** 规范，直接查阅标准的 USB 扫描码表即可对号入座。`电源`键是`0x66`（也在规范中）。
+  </br>The `KeyID` for the `Fn` key is `0xF0`, while all other keys strictly adhere to the international standard **USB HID Keyboard Usage ID specification**. They can be mapped directly by referencing a standard USB scan code table. The `Power` key is `0x66` (which is also defined within the specification).
 * `Byte 413 ~ 524`: 尾部零填充对齐 / Tail zero-padding alignment
 
 ### B. 灯条与 Logo 区 (VID: `0x1038`, PID: `0x1161`) / Lightbar & Logo Zone (VID: `0x1038`, PID: `0x1161`)
