@@ -114,8 +114,8 @@ Once `go.c` in the repository is successfully compiled and run, it will present 
 
 ## 5. 未来计划 (Todo List) / Future Plans (Todo List)
 
-* [ ] 开发一个带有 GUI 交互界面的简单配置程序，支持可视化点击按键并自定义颜色。
-* [ ] Develop a simple configuration program with a GUI interactive interface, supporting visual key clicks and custom color definitions.
+* [x] 开发一个带有 GUI 交互界面的简单配置程序，支持可视化点击按键并自定义颜色。
+* [x] Develop a simple configuration program with a GUI interactive interface, supporting visual key clicks and custom color definitions.
 * [ ] 联动系统底层 API，使键盘按键颜色能够根据 CPU 温度、内存占用等系统信息进行动态映射显示。
 * [ ] Integrate with low-level system APIs to allow dynamic mapping and display of keyboard colors based on system information such as CPU temperature and memory usage.
 
@@ -124,9 +124,9 @@ Once `go.c` in the repository is successfully compiled and run, it will present 
 ## FAQ (常见问题解答) / FAQ (Frequently Asked Questions)
 
 * **Q：为什么搞这个项目？**
-  * **A**：我只想把默认的那个亮瞎眼的彩虹跑马灯关掉或者调成舒服的单色，结果官方非得逼我下载一个在后台常驻三个进程、塞满了一大堆我八辈子用不到的功能的臃肿软件，感觉极度不爽，于是决定自己动手把它给逆向替换掉。
+  * **A**：我只想把默认的那个亮瞎眼的彩虹跑马灯关掉或者调成舒服的单色，结果官方非得逼我下载一个在后台常驻四个进程、塞满了一大堆我八辈子用不到的功能的臃肿软件，感觉极度不爽，于是决定自己动手把它给逆向替换掉。写个小而美的软件不好吗？整不了微信我还整不了你？[doge]
 * **Q: Why did you create this project?**
-  * **A**: I just wanted to turn off the default blinding rainbow wave effect or adjust it to a comfortable solid color. Instead, the official choice forces me to download a bloated software that keeps three processes running constantly in the background, packed with a ton of features I would never use in a lifetime. Feeling extremely annoyed, I decided to reverse-engineer and replace it myself.
+  * **A**: I just wanted to turn off the default blinding rainbow wave effect or adjust it to a comfortable solid color. Instead, the official choice forces me to download a bloated software that keeps four processes running constantly in the background, packed with a ton of features I would never use in a lifetime. Feeling extremely annoyed, I decided to reverse-engineer and replace it myself.
 * **Q：退出程序或者电脑重启之后，灯光效果会保留吗？**
   * **A**：静态效果会保留。写入后芯片会锁存当前的 RGB 状态。动态效果当然就停啦。
 * **Q: Will the lighting effects persist after exiting the program or restarting the computer?**
